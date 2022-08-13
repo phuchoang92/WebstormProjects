@@ -1,7 +1,7 @@
 # Movie Web
 ## About:
   ### Description:
-  This pr
+  Website is created for user to watch movies and info about them
   ### Techs:
   - Nextjs, Typescript, Reactjs
 # Main Features:
