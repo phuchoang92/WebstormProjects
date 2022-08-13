@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    function hide(){
+        document.getElementById("shape").classList.toggle("hid")
+    }
+    function blue(){
+        document.getElementById("shape").classList.toggle("blue")
+    }
+  </script>
+    <style>
+        .hid{
+            display: none;
+        }
+        .square{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+        .square.blue{
+            background-color: blue;
+        }
+    </style>
+  <div id="shape" class="square blue"></div>
+  <button onclick="hide()">Hide</button>
+<button onclick="blue()">Yellow-do</button>
+</body>
+</html>

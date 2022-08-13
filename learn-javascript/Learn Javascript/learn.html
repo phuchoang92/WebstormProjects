@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tester</title>
+</head>
+<body>
+    <div>
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+    </div>
+    <script>
+        const all_button = document.querySelectorAll("button")
+        all_button.forEach((but)=>{
+            function output(){
+                console.log(this.textContent)
+            }
+            but.addEventListener("click",output)
+        })
+        console.log(all_button)
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply bg-[#141414] text-white !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-red-50;
+    }
+    header{
+        @apply fixed top-0 z-50 flex w-full justify-between px-4 py-2 transition-all lg:px-6 lg:py-4;
+    }
+}
+
+@layer components {
+    .headerLink{
+        @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.1s] hover:text-[#b3b3b3];
+    }
+
+    .bannerButton{
+        @apply cursor-pointer flex items-center gap-x-2 rounded px-5 py-1.5 font-semibold
+        transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl
+        ;
+    }
+}

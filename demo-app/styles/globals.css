@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply -bg--body-color -text--white-color
+    }
+}
+
+@layer components {
+    header{
+        @apply fixed top-0 left-0 w-full z-[100] py-[15px]
+    }
+    .search-icon{
+        @apply -fill--white-color cursor-pointer hover:-fill--hover-color
+    }
+    input{
+        @apply -caret--text-color -text--text-color
+    }
+    .search-box{
+        @apply flex gap-x-[0.7rem] px-[15px] py-[8px] max-w-[240px] w-full items-center -bg--container-color rounded-[64px]
+    }
+    .navbar{
+        @apply fixed  top-1/2 flex flex-col gap-y-[2.1rem] translate-y-[-50%]  left-[18px]
+    }
+
+    .nav-link{
+        @apply flex flex-col items-center -text--nav-link hover:-text--text-color hover:scale-110 ease-linear duration-75
+    }
+
+    .banner{
+
+    }
+
+    .headerLink{
+        @apply cursor-pointer font-light text-[#e5e5e5] transition duration-[.1s] hover:text-[#b3b3b3];
+    }
+
+    .bannerButton{
+        @apply cursor-pointer flex items-center gap-x-3 rounded px-5 py-1.5 font-semibold
+        transition hover:opacity-75 md:py-2.5 md:px-6
+        ;
+    }
+
+    .input{
+        @apply w-full rounded px-5 py-3.5 -bg--input-color outline-none focus:-bg--focus-input
+    }
+
+    .login-form {
+        @apply  rounded relative space-y-8 w-max bg-black/75 py-10 px-6 rounded
+    }
+
+    .inform-section{
+        @apply mx-auto max-w-[120rem]
+    }
+
+}
